@@ -7,7 +7,7 @@ export type ConfigType = {
 }
 
 const config: ConfigType = {
-  port: Number(process.env.PORT) || 3010,
+  port: Number(process.env.BACKEND_CONTAINER_PORT) || 3010,
   apiKey: process.env.API_KEY || "DEMO_KEY"
 }
 
